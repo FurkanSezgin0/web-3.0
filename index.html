@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Portfolyo</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h2><a href="#">Furkan Sezgin</a></h2>
+            </div>
+            <ul class="nav_links">
+                <li><a href="#anasayfa" class="active">Anasayfa</a></li>
+                <li><a href="#hakkımda">Hakkımda</a></li>
+                <li><a href="#iletişim">İletişim</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Ana Sayfa -->
+    <section id="anasayfa">
+        <div class="inner_anasayfa">
+            <div class="child_anasayfa">
+                <h1>Web siteye mi ihtiyacın var?<br><span class="span_child">Ne bekliyorsun?</span></h1>
+                <p>Kısa sürede etkili tasarımlar için</p>
+                <div class="btn-group">
+                    <button id="message-btn" class="btn">Mesaj At</button>
+                    <button id="play-music-btn" class="btn">Müzik Oynat</button>
+                    <a href="https://www.instagram.com/furkansezgn72" target="_blank">
+                        <button class="social-btn">Instagram</button>
+                    </a>
+                    <a href="https://github.com/FurkanSezgin0" target="_blank">
+                        <button class="social-btn">GitHub</button>
+                    </a>
+                </div>
+            </div>
+            <div class="child_anasayfa">
+                <img src="img/home-imgr.png" alt="Ana Sayfa Görseli">
+            </div>
+        </div>
+        <!-- Müzik Dosyası -->
+        <audio id="background-music" src="müzik/song.mp3"></audio>
+    </section>
+
+    <!-- Hakkımda -->
+    <section id="hakkımda">
+        <div class="section_title">
+            <h2>Benim Hakkımda</h2>
+        </div>
+        <div class="inner_testi">
+            <div class="child_testi">
+                <p class="about-text">
+                    Şuanki eğitim öğretim döneminde 1. sınıf Bilgisayar Mühendisliği öğrencisiyim. 
+                    Elimden geldiğince kendimi geliştirmeye çalışıyorum.
+                </p>
+                <div class="skills">
+                    <p class="skills-title">Bildiğim Yazılım Dilleri:</p>
+                    <div class="skills-logos">
+                        <!-- C ve Python logoları -->
+                        <img src="img/c.png" alt="C Logo" class="skill-logo">
+                        <img src="img/python.png" alt="Python Logo" class="skill-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim -->
+    <section id="iletişim">
+        <div class="section_title">
+            <h2>İletişime Geç</h2>  
+        </div>
+        <div class="inner_contact">
+            <div class="child_contact">
+                <form id="contact-form" action="#">
+                    <label for="fullname">İsim</label>
+                    <input id="fullname" placeholder="İsim" type="text" name="fullname">
+                    <label for="email">E-mail</label>
+                    <input id="email" placeholder="E-mail" type="email" name="email">
+                    <label for="phone">Telefon</label>
+                    <input id="phone" placeholder="Telefon" type="text" name="phone">
+                    <label for="message">Mesaj</label>
+                    <textarea id="message" placeholder="Mesaj" name="message" cols="30" rows="10"></textarea>
+                    <input id="send-btn" type="submit" value="Gönder">
+                </form>
+                <!-- İletişim Görseli -->
+                <img src="img/iletişim.png" alt="İletişim Görseli" class="contact-image">
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
