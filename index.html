@@ -38,9 +38,6 @@
                     </a>
                 </div>
             </div>
-            <div class="child_anasayfa">
-                <img src="img/home-imgr.png" alt="Ana Sayfa Görseli">
-            </div>
         </div>
         <!-- Müzik Dosyası -->
         <audio id="background-music" src="müzik/song.mp3"></audio>
@@ -69,30 +66,31 @@
         </div>
     </section>
 
-    <!-- İletişim -->
-    <section id="iletişim">
-        <div class="section_title">
-            <h2>İletişime Geç</h2>  
+   <!-- İletişim -->
+<section id="iletişim">
+    <div class="section_title">
+        <h2>İletişime Geç</h2>  
+    </div>
+    <div class="inner_contact">
+        <div class="child_contact">
+            <form id="contact-form" action="send_email.php" method="POST" onsubmit="return validateForm(event)">
+                <label for="fullname">İsim</label>
+                <input id="fullname" placeholder="İsim" type="text" name="fullname" required>
+                <label for="email">E-mail</label>
+                <input id="email" placeholder="E-mail" type="email" name="email" required>
+                <label for="phone">Telefon</label>
+                <input id="phone" placeholder="Telefon" type="text" name="phone" required>
+                <label for="message">Mesaj</label>
+                <textarea id="message" placeholder="Mesaj" name="message" cols="30" rows="10" required></textarea>
+                <input id="send-btn" type="submit" value="Gönder">
+            </form>
+            <!-- Bildirim Mesajı -->
+            <div id="notification" class="hidden">Mesaj gönderildi!</div>
         </div>
-        <div class="inner_contact">
-            <div class="child_contact">
-                <form id="contact-form" action="#">
-                    <label for="fullname">İsim</label>
-                    <input id="fullname" placeholder="İsim" type="text" name="fullname">
-                    <label for="email">E-mail</label>
-                    <input id="email" placeholder="E-mail" type="email" name="email">
-                    <label for="phone">Telefon</label>
-                    <input id="phone" placeholder="Telefon" type="text" name="phone">
-                    <label for="message">Mesaj</label>
-                    <textarea id="message" placeholder="Mesaj" name="message" cols="30" rows="10"></textarea>
-                    <input id="send-btn" type="submit" value="Gönder">
-                </form>
-                <!-- İletişim Görseli -->
-                <img src="img/iletişim.png" alt="İletişim Görseli" class="contact-image">
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 
     <script src="js/script.js"></script>
+    
 </body>
 </html>
